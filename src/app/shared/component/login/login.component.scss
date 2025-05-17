@@ -1,8 +1,15 @@
-.productImg {
-  width: 90%;
-  height: 100vh;
-  img {
-    width: 100%;
-    height: 100%;
+/* Default size for larger screens */
+.productImg img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for small/mobile screens */
+@media (max-width: 768px) {
+  .productImg img {
+    width: 80%; /* Make the image smaller */
+    display: block;
+    margin: 0 auto; /* Center the image */
   }
 }
