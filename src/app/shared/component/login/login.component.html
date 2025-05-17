@@ -1,0 +1,107 @@
+<div class="row mt-5">
+  <div class="col-md-5 productImg">
+    <img
+      src="../../../../assets/images/productcart.jpg"
+      alt="product image"
+      title="product image"
+    />
+  </div>
+  <div class="col-md-4 offset-md-1 mt-5">
+    <main class="main">
+      <h2 class="text-center">
+        {{ allreadyhasaccount ? "login to Exclusive" : "Create an Account" }}
+      </h2>
+      <p>Enter your Details below</p>
+      <ng-container *ngIf="allreadyhasaccount">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <mat-form-field appearance="legacy" class="w-100 mb-3">
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              type="email"
+              formControlName="email"
+              id="loginemail"
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy" class="w-100 mb-3">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              type="password"
+              formControlName="password"
+              id="loginpass"
+            />
+          </mat-form-field>
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button color="warn" class="w-50 mb-2">
+              Log In
+            </button>
+            <a routerLink="" style="color: red">Forget Password?</a>
+          </div>
+        </form>
+        <br />
+      </ng-container>
+
+      <ng-container *ngIf="!allreadyhasaccount">
+        <form [formGroup]="sighUpForm" (ngSubmit)="onSignup()">
+          <mat-form-field appearance="legacy" class="w-100 mb-3">
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              type="email"
+              formControlName="email"
+              id="signupemail"
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy" class="w-100 mb-3">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              type="password"
+              formControlName="password"
+              id="signuppass"
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy" class="w-100 mb-3">
+            <mat-label>User Role</mat-label>
+            <mat-select formControlName="userRole" id="userRole">
+              <mat-option value="buyer">Buyer</mat-option>
+              <mat-option value="admin">Admin</mat-option>
+              <mat-option value="superAdmin">Super Admin</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="signbtn">
+            <button mat-raised-button color="warn" class="mb-3 btn btn-block">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="googlebtn">
+            <button mat-raised-button color="Basic" class="btn btn-block">
+              <img
+                src="https://developers.google.com/identity/images/g-logo.png"
+                alt="Google logo"
+                width="20"
+                height="20"
+                style="margin-right: 8px"
+              />
+              Sign in with Google
+            </button>
+          </div>
+        </form>
+        <br />
+      </ng-container>
+
+      <a
+        style="cursor: pointer"
+        (click)="allreadyhasaccount = !allreadyhasaccount"
+        >{{
+          allreadyhasaccount ? "Dont have Account" : "Allready have Account"
+        }}</a
+      >
+    </main>
+  </div>
+</div>

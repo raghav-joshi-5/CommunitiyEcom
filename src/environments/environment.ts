@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseurl: 'https://ecom-backend-omega-six.vercel.app',
+  loginurl: `https://auth-git-main-iamrkjs-projects.vercel.app`,
 };
 
 /*

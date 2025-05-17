@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-white px-5 py-3">
+  <a class="navbar-brand fw-bold" routerLink="home">Exclusive</a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="isNavbarCollapsed = !isNavbarCollapsed"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    [ngClass]="{ show: !isNavbarCollapsed }"
+  >
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="signup">Sign Up</a>
+      </li>
+    </ul>
+
+    <div class="search-wrapper d-flex align-items-center">
+      <input
+        type="text"
+        class="form-control border-0 shadow-none"
+        placeholder="What are you looking for?"
+      />
+      <span class="material-icons search-icon">search</span>
+    </div>
+  </div>
+</nav>
