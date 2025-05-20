@@ -1,0 +1,13 @@
+<div class="product-card">
+  <div class="discount-badge">-40 %</div>
+  <img [src]="product.images" alt="{{ product.name }}" />
+  <h3>{{ product.name }}</h3>
+  <p>
+    <span class="current-price">${{ product.price }}</span>
+    <span class="old-price">${{ product.oldPrice }}</span>
+  </p>
+  <div>
+    <span class="stars">⭐⭐⭐⭐⭐</span>
+    <span class="reviews">({{ product.reviews }})</span>
+  </div>
+</div>

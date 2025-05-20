@@ -1,0 +1,19 @@
+// components/_search.scss
+.search-wrapper {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 8px 12px;
+  width: 260px;
+
+  input {
+    background: transparent;
+    flex: 1;
+    outline: none;
+  }
+
+  .search-icon {
+    color: $black;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

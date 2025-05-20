@@ -1,0 +1,58 @@
+// layout/_footer-layout.scss
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 40px 20px;
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  &-column {
+    flex: 1 1 180px;
+    min-width: 180px;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-subtitle {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  &-note {
+    font-size: 14px;
+    color: $gray-medium;
+    margin-bottom: 12px;
+  }
+
+  &-divider {
+    border: none;
+    border-top: 1px solid gray;
+  }
+
+  &-bottom {
+    text-align: center;
+    color: $gray-dark;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}

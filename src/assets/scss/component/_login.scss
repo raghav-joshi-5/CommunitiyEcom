@@ -1,0 +1,12 @@
+// components/_product-img.scss
+.productImg img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}

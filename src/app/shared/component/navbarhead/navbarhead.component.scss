@@ -1,61 +1,61 @@
-/* promo-banner.component.css */
-.promo-bar {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px;
-  font-family: sans-serif;
-  font-size: 16px;
-  position: relative;
-}
+// /* promo-banner.component.css */
+// .promo-bar {
+//   background-color: #000;
+//   color: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 12px 20px;
+//   font-family: sans-serif;
+//   font-size: 16px;
+//   position: relative;
+// }
 
-.promo-bar p {
-  margin: 0;
-  text-align: center;
-}
+// .promo-bar p {
+//   margin: 0;
+//   text-align: center;
+// }
 
-.shop-now {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-left: 5px;
-}
+// .shop-now {
+//   color: #fff;
+//   font-weight: bold;
+//   text-decoration: underline;
+//   margin-left: 5px;
+// }
 
-.language-selector {
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
+// .language-selector {
+//   position: absolute;
+//   right: 20px;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   font-size: 16px;
+// }
 
-.language-selector .material-icons {
-  font-size: 20px;
-  margin-left: 4px;
-}
+// .language-selector .material-icons {
+//   font-size: 20px;
+//   margin-left: 4px;
+// }
 
-.language-dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #222;
-  list-style: none;
-  padding: 5px 0;
-  margin: 4px 0 0 0;
-  border: 1px solid #444;
-  border-radius: 4px;
-  z-index: 10;
-}
+// .language-dropdown {
+//   position: absolute;
+//   top: 100%;
+//   right: 0;
+//   background-color: #222;
+//   list-style: none;
+//   padding: 5px 0;
+//   margin: 4px 0 0 0;
+//   border: 1px solid #444;
+//   border-radius: 4px;
+//   z-index: 10;
+// }
 
-.language-dropdown li {
-  padding: 6px 16px;
-  cursor: pointer;
-  color: #fff;
-}
+// .language-dropdown li {
+//   padding: 6px 16px;
+//   cursor: pointer;
+//   color: #fff;
+// }
 
-.language-dropdown li:hover {
-  background-color: #333;
-}
+// .language-dropdown li:hover {
+//   background-color: #333;
+// }

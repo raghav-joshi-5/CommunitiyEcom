@@ -1,0 +1,72 @@
+// layout/_product-card.scss
+.product-card {
+  background: $white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .discount-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: $red;
+    color: $white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: $text-dark;
+    margin: 0 0 8px;
+  }
+
+  .price {
+    margin-bottom: 8px;
+
+    .current-price {
+      color: $red;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    .old-price {
+      color: #aaa;
+      text-decoration: line-through;
+      font-size: 14px;
+    }
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    .stars {
+      color: $orange;
+    }
+
+    .reviews {
+      color: $text-muted;
+      font-size: 14px;
+    }
+  }
+}

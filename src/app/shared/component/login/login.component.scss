@@ -1,15 +1,13 @@
-/* Default size for larger screens */
-.productImg img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
+// .productImg img {
+//   width: 100%;
+//   max-width: 100%;
+//   height: auto;
+// }
 
-/* Media query for small/mobile screens */
-@media (max-width: 768px) {
-  .productImg img {
-    width: 80%; /* Make the image smaller */
-    display: block;
-    margin: 0 auto; /* Center the image */
-  }
-}
+// @media (max-width: 768px) {
+//   .productImg img {
+//     width: 80%;
+//     display: block;
+//     margin: 0 auto;
+//   }
+// }

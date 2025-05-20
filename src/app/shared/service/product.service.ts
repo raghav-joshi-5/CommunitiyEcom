@@ -16,9 +16,22 @@ export class ProductService {
 
   constructor(private _http: HttpClient) {}
 
+  // product
   fetchallproduct(): Observable<any> {
-    return this._http.get<any>(this.productURL);
+    return this._http.get(`${this.productURL}`);
   }
+
+  // fetchallproduct(page: number, limit: number): Observable<any> {
+  //   return this._http.get(`${this.productURL}?page=${page}&limit=${limit}`);
+  // }
+
+  // fetchproductbyCategory(category: string): Observable<any> {
+  //   return this._http.get(`${this.productURL}?category=${category}`);
+  // }
+
+  // getobj(prodId: string): Observable<any> {
+  //   return this._http.get(`${this.productURL}/${prodId}`);
+  // }
 
   // login
   registeruser(userDetail: IRegister): Observable<any> {

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: $font-base;
+}
+
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: $footer-padding;
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-large;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  &-column {
+    flex: 1 1 180px;
+    min-width: 180px;
+
+    h3 {
+      font-size: $font-lg;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+  }
+
+  &-subtitle {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  &-note {
+    font-size: $font-sm;
+    color: $gray-medium;
+    margin-bottom: 12px;
+  }
+
+  &-input-group {
+    display: flex;
+    border: $border-gray;
+    border-radius: $radius-sm;
+    overflow: hidden;
+
+    input {
+      flex: 1;
+      padding: $input-padding;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: $white;
+    }
+
+    button {
+      background: none;
+      border: none;
+      color: $white;
+      padding: $input-padding 12px;
+      cursor: pointer;
+      font-size: $font-lg;
+    }
+  }
+
+  &-app {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .qr {
+      width: 60px;
+      height: 60px;
+      background: $gray-bg-hover; // placeholder
+    }
+
+    .badge {
+      display: block;
+      width: 100px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &-socials {
+    display: flex;
+    gap: $gap-medium;
+    font-size: $icon-size;
+    margin-top: 8px;
+  }
+
+  &divider {
+    border: none;
+    border-top: 1px solid gray;
+  }
+
+  &-bottom {
+    text-align: center;
+    color: $gray-dark;
+    font-size: $font-sm;
+    margin-top: 40px;
+  }
+}

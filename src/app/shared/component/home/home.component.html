@@ -1,1 +1,24 @@
-<p>home works!</p>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div class="category-list">
+      <ul>
+        <li>Woman’s Fashion <span>&rsaquo;</span></li>
+        <li>Men’s Fashion <span>&rsaquo;</span></li>
+        <li>Electronics</li>
+        <li>Home & Lifestyle</li>
+        <li>Medicine</li>
+        <li>Sports & Outdoor</li>
+        <li>Baby’s & Toys</li>
+        <li>Groceries & Pets</li>
+        <li>Health & Beauty</li>
+      </ul>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let card of productArr">
+        <app-card [product]="card"></app-card>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
