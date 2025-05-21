@@ -1,0 +1,60 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  .contact-info {
+    @include card;
+    flex: 1;
+    min-width: 300px;
+
+    .box {
+      margin-bottom: 2rem;
+
+      .icon {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+
+        &.red {
+          color: $primary-color;
+        }
+      }
+
+      h3 {
+        margin: 0.5rem 0;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0.25rem 0;
+        font-size: 14px;
+      }
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  .contact-form {
+    @include card;
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+      @include input-style;
+    }
+
+    button {
+      align-self: flex-end;
+      @include button-style;
+    }
+  }
+}

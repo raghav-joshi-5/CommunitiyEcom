@@ -15,6 +15,8 @@ import { HomeComponent } from './shared/component/home/home.component';
 import { ContactComponent } from './shared/component/contact/contact.component';
 import { AboutComponent } from './shared/component/about/about.component';
 import { CardComponent } from './shared/component/card/card.component';
+import { TimerComponent } from './shared/component/timer/timer.component';
+import { CarouselComponent } from './shared/component/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { CardComponent } from './shared/component/card/card.component';
     ContactComponent,
     AboutComponent,
     CardComponent,
+    TimerComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+@mixin card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+@mixin input-style {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: $input-bg;
+  font-size: 14px;
+}
+
+@mixin button-style {
+  padding: 0.75rem 2rem;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}

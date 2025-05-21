@@ -1,0 +1,39 @@
+.flash-sale {
+  font-family: Arial, sans-serif;
+  // text-align: center;
+  padding: 20px;
+
+  .main-title {
+    font-size: 32px;
+    margin: 10px 0;
+    margin-right: 50px;
+  }
+
+  .countdown {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    .time-box {
+      text-align: center;
+
+      .label {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      .value {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .colon {
+      font-size: 24px;
+      color: #e74c3c;
+    }
+  }
+}

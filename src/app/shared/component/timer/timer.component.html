@@ -1,0 +1,29 @@
+<div class="flash-sale">
+  <div class="header">
+    <span class="icon">🟥</span>
+    <span class="title">Today's</span>
+  </div>
+
+  <div class="countdown">
+    <h1 class="main-title">Flash Sales</h1>
+    <div class="time-box">
+      <div class="label">Days</div>
+      <div class="value">{{ days | number : "2.0" }}</div>
+    </div>
+    <span class="colon">:</span>
+    <div class="time-box">
+      <div class="label">Hours</div>
+      <div class="value">{{ hours | number : "2.0" }}</div>
+    </div>
+    <span class="colon">:</span>
+    <div class="time-box">
+      <div class="label">Minutes</div>
+      <div class="value">{{ minutes | number : "2.0" }}</div>
+    </div>
+    <span class="colon">:</span>
+    <div class="time-box">
+      <div class="label">Seconds</div>
+      <div class="value">{{ seconds | number : "2.0" }}</div>
+    </div>
+  </div>
+</div>

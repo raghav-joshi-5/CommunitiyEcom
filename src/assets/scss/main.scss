@@ -12,6 +12,7 @@
 @import "layouts/footer-layout";
 @import "layouts/product-card";
 @import "layouts/promo-bar";
+@import "layouts/header";
 //component
 @import "component/footer";
 @import "component/about";
@@ -21,3 +22,6 @@
 @import "component/login";
 @import "component/navbar";
 @import "component/navbarhead";
+@import "component/flash-sale";
+//pages
+@import "pages/contact";
